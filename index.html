@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전시진 | NO-CODE AUTOMATION CONSULTANT</title>
+  </head>
+  <body class="bg-[#080b12] text-slate-100 overflow-x-hidden font-sans-custom select-none selection:bg-blue-950 selection:text-white">
+    <!-- Background Floating Glowing Circles from "Artistic Flair" Design -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+      <!-- Blob 1: Blue -->
+      <div class="absolute top-[10%] right-[10%] w-[400px] h-[400px] rounded-full bg-[#3b82f6]/15 blur-[100px] animate-float-1"></div>
+      <!-- Blob 2: Violet -->
+      <div class="absolute bottom-[15%] left-[5%] w-[350px] h-[350px] rounded-full bg-[#8b5cf6]/15 blur-[90px] animate-float-2"></div>
+      
+      <!-- Subtle artistic dark grid/overlay -->
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_10%_10%,#1e293b_0%,transparent_40%),radial-gradient(circle_at_90%_90%,#1e3a8a_0%,transparent_40%)] opacity-40"></div>
+    </div>
+
+    <!-- MAIN WRAPPER -->
+    <div class="relative z-10 w-full min-h-screen flex flex-col justify-between">
+      
+      <!-- HEADER & FLOATING NAVIGATION (Artistic Glass Top Bar) -->
+      <header class="sticky top-4 z-50 mx-auto w-[92%] max-w-7xl transition-all duration-300">
+        <nav class="glass-card-light rounded-full px-6 py-4 flex items-center justify-between border-white/[0.04]">
+          <div class="flex items-center gap-3">
+            <!-- Sleek Automation Dot -->
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+            </span>
+            <span class="font-display-custom text-sm font-semibold tracking-wider text-white select-none">SIJIN AUTOMATION</span>
+          </div>
+          
+          <!-- Anchor Links -->
+          <div class="hidden md:flex items-center gap-8 text-xs font-medium tracking-widest text-slate-300 uppercase font-mono-custom">
+            <a href="#profile" class="hover:text-blue-400 transition-colors duration-200">Profile</a>
+            <a href="#skills" class="hover:text-blue-400 transition-colors duration-200">Skills</a>
+            <a href="#experience" class="hover:text-blue-400 transition-colors duration-200">Experience</a>
+            <a href="#calculator" class="hover:text-blue-400 transition-colors duration-200">ROI Calculator</a>
+            <a href="#contact" class="hover:text-blue-400 transition-colors duration-200">Contact</a>
+          </div>
+
+          <!-- Quick Connect Action -->
+          <a href="#contact" class="glass-pill text-[11px] font-bold tracking-wider text-blue-400 uppercase px-5 py-2 hover:bg-blue-500/10 hover:border-blue-400/40 transition-all duration-300 rounded-full font-mono-custom">
+            Connect
+          </a>
+        </nav>
+      </header>
+
+      <!-- PORTFOLIO BODY CONTAINER -->
+      <main class="container mx-auto px-4 py-8 md:py-16 max-w-7xl relative">
+        
+        <!-- HERO SEGMENT (Tilted 3D Profile Frame & Heading) -->
+        <section id="profile" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-16 pt-4">
+          
+          <!-- Left side: Hero Typography -->
+          <div class="lg:col-span-7 flex flex-col justify-center space-y-6 text-center lg:text-left">
+            <div class="inline-flex self-center lg:self-start items-center gap-2 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 backdrop-blur-md">
+              <span class="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"></span>
+              <span class="text-[10px] font-mono-custom tracking-[0.2em] text-blue-400 uppercase">Automation Consultant</span>
+            </div>
+
+            <h1 class="font-display-custom text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight !leading-[1.15] text-white">
+              비즈니스의 속도를 바꾸는<br/>
+              <span class="bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent drop-shadow-sm">노코드 자동화 컨설턴트</span>
+            </h1>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mx-auto lg:mx-0 font-light">
+              반복 업무를 최소화하고 데이터 기반 의사결정을 지원하는 자동화 시스템을 완성합니다. 
+              SaaS 도구와 현대의 노코드 플랫폼을 연동한 사용자 친화적 워크플로우를 통해 
+              기업의 비약적인 생산성과 실무 효율성을 설계하는 파트너, 전시진입니다.
+            </p>
+
+            <!-- Quick Meta Badges -->
+            <div class="flex flex-wrap gap-3 justify-center lg:justify-start pt-2">
+              <span class="glass-pill text-[11px] font-mono-custom px-4 py-1.5 rounded-full text-slate-300">📍 Seoul, South Korea</span>
+              <a href="http://www.sijinautomation.com" target="_blank" class="glass-pill text-[11px] font-mono-custom px-4 py-1.5 rounded-full text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1.5">
+                🔗 www.sijinautomation.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Right side: 3D Tilting Card Framing Digital Portrait -->
+          <div class="lg:col-span-5 flex justify-center">
+            <!-- 3D Card Parent Frame with perspective -->
+            <div class="tilt-container w-full max-w-sm aspect-square relative" style="perspective: 1000px;">
+              <div class="tilt-card w-full h-full glass-card rounded-2xl p-6 border-white/[0.08] relative group overflow-hidden transition-all duration-300 hover:border-blue-500/30 flex flex-col justify-between" id="avatarCard">
+                <!-- Outer glow element backing -->
+                <div class="absolute -inset-1 bg-gradient-to-tr from-blue-500/20 via-purple-500/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 filter blur-xl"></div>
+                
+                <!-- Specular Sheen Highlight Line -->
+                <div class="absolute inset-0 bg-[radial-gradient(circle_at_var(--x,_50%)_var(--y,_50%),rgba(255,255,255,0.08)_0%,transparent_50%)] pointer-events-none"></div>
+
+                <div class="relative z-10 w-full h-[76%] rounded-xl overflow-hidden glass-card-light flex items-center justify-center p-3">
+                  <img src="" id="avatarImg" alt="전시진 3D Avatar" class="w-full h-full object-contain rounded-lg filter drop-shadow-[0_10px_20px_rgba(59,130,246,0.15)] transition-transform duration-500 group-hover:scale-105" referrerPolicy="no-referrer" />
+                </div>
+
+                <div class="relative z-10 flex items-center justify-between mt-4">
+                  <div>
+                    <h3 class="font-display-custom text-lg font-bold text-white tracking-wide">전시진</h3>
+                    <p class="text-[10px] font-mono-custom tracking-widest text-blue-400 mt-0.5">JEON SI-JIN</p>
+                  </div>
+                  <div class="glass-pill px-3 py-1.5 rounded-full text-[10px] font-mono-custom text-slate-400 flex items-center gap-1">
+                    <span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Active
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- BENTO GRID SECTION (Structured Portfolio content) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-12">
+          
+          <!-- LEFT AREA (4 Cols on Large Screens) -->
+          <div class="lg:col-span-4 flex flex-col gap-6">
+            
+            <!-- Bento Box: Profile & Contacts Info -->
+            <div class="glass-card rounded-2xl p-6 border-white/[0.08] transition-all duration-300 hover:border-white/[0.12] flex flex-col gap-5 sheen-effect" id="contactCard">
+              <div class="border-b border-white/[0.06] pb-4">
+                <h2 class="text-[10px] font-mono-custom tracking-wider uppercase text-blue-400">01 / Profile & CONTACT</h2>
+                <h3 class="font-display-custom text-xl font-bold text-white mt-1">인적 사항 및 연락처</h3>
+              </div>
+
+              <!-- Profile Description Block -->
+              <p class="text-xs text-slate-400 leading-relaxed font-light">
+                비즈니스 전반의 정보 아키텍처와 통합 인프라를 혁신적으로 조율합니다. 기업의 내적 병목 현상을 정확히 차단하고, Zapier, Make 등의 통합 기재를 이용해 기하급수적인 속도의 확장을 모색합니다.
+              </p>
+
+              <!-- Contacts Rows with Interactive copy actions -->
+              <div class="flex flex-col gap-3 pt-2 font-mono-custom">
+                <!-- Phone Card -->
+                <div class="glass-card-light rounded-xl p-3 flex items-center justify-between border-white/[0.03] hover:border-blue-500/20 hover:bg-blue-500/[0.02] transition-all duration-300 group">
+                  <div class="flex items-center gap-3">
+                    <div class="p-2 glass-pill text-blue-400 rounded-lg">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    </div>
+                    <div>
+                      <span class="text-[9px] text-slate-500 block">PHONE</span>
+                      <span class="text-xs font-semibold text-slate-200 select-all font-mono-custom text-copy-field">010-4821-3715</span>
+                    </div>
+                  </div>
+                  <button class="btn-copy glass-pill hover:bg-white/10 text-slate-300 px-2 py-1 rounded-md text-[10px] transition-all" data-copy="010-4821-3715">
+                    복사
+                  </button>
+                </div>
+
+                <!-- Email Card -->
+                <div class="glass-card-light rounded-xl p-3 flex items-center justify-between border-white/[0.03] hover:border-blue-500/20 hover:bg-blue-500/[0.02] transition-all duration-300 group">
+                  <div class="flex items-center gap-3">
+                    <div class="p-2 glass-pill text-indigo-400 rounded-lg">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div>
+                      <span class="text-[9px] text-slate-500 block">EMAIL</span>
+                      <span class="text-xs font-semibold text-slate-200 select-all font-mono-custom text-copy-field">sijin.jeon@example.com</span>
+                    </div>
+                  </div>
+                  <button class="btn-copy glass-pill hover:bg-white/10 text-slate-300 px-2 py-1 rounded-md text-[10px] transition-all" data-copy="sijin.jeon@example.com">
+                    복사
+                  </button>
+                </div>
+
+                <!-- Website Card -->
+                <div class="glass-card-light rounded-xl p-3 flex items-center justify-between border-white/[0.03] hover:border-blue-500/20 hover:bg-blue-500/[0.02] transition-all duration-300 group">
+                  <div class="flex items-center gap-3">
+                    <div class="p-2 glass-pill text-blue-400 rounded-lg">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <div>
+                      <span class="text-[9px] text-slate-500 block">WEBSITE</span>
+                      <span class="text-xs font-semibold text-slate-200 select-all font-mono-custom text-copy-field">www.sijinautomation.com</span>
+                    </div>
+                  </div>
+                  <a href="http://www.sijinautomation.com" target="_blank" class="glass-pill hover:bg-blue-500/10 text-blue-400 p-1.5 rounded-md transition-all">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bento Box: Languages Panel -->
+            <div class="glass-card rounded-2xl p-6 border-white/[0.08] transition-all duration-300 hover:border-white/[0.12] flex flex-col gap-4">
+              <div>
+                <h2 class="text-sm font-mono-custom tracking-widest uppercase text-blue-400">02 / Language Capability</h2>
+                <h3 class="font-display-custom text-xl font-bold text-white mt-1">글로벌 커뮤니케이션</h3>
+              </div>
+
+              <div class="flex flex-col gap-4 pt-2">
+                <!-- Korean -->
+                <div class="space-y-1.5">
+                  <div class="flex justify-between items-center text-xs">
+                    <span class="font-bold text-slate-200">Korean (국어)</span>
+                    <span class="text-[10px] font-mono-custom text-blue-400">Native • 5 / 5</span>
+                  </div>
+                  <!-- Dot Bar style representation -->
+                  <div class="flex gap-1.5 justify-between">
+                    <div class="h-1 bg-blue-500 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-blue-500 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-blue-500 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-blue-500 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-blue-500 flex-1 rounded-full shadow-sm"></div>
+                  </div>
+                </div>
+
+                <!-- English -->
+                <div class="space-y-1.5">
+                  <div class="flex justify-between items-center text-xs">
+                    <span class="font-bold text-slate-200">English (영어)</span>
+                    <span class="text-[10px] font-mono-custom text-indigo-400">Fluent • 4 / 5</span>
+                  </div>
+                  <div class="flex gap-1.5 justify-between">
+                    <div class="h-1 bg-indigo-500 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-indigo-500 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-indigo-500 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-indigo-500 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-white/[0.08] flex-1 rounded-full"></div>
+                  </div>
+                </div>
+
+                <!-- Japanese -->
+                <div class="space-y-1.5">
+                  <div class="flex justify-between items-center text-xs">
+                    <span class="font-bold text-slate-200">Japanese (일어)</span>
+                    <span class="text-[10px] font-mono-custom text-blue-300">Conversational • 3 / 5</span>
+                  </div>
+                  <div class="flex gap-1.5 justify-between font-mono-custom">
+                    <div class="h-1 bg-blue-400 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-blue-400 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-blue-400 flex-1 rounded-full shadow-sm"></div>
+                    <div class="h-1 bg-white/[0.08] flex-1 rounded-full"></div>
+                    <div class="h-1 bg-white/[0.08] flex-1 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT AREA (8 Cols on Large Screens) -->
+          <div class="lg:col-span-8 flex flex-col gap-6" id="skills">
+            
+            <!-- Bento Box: Skills Overview Grid & Visual Trigger Schema -->
+            <div class="glass-card rounded-2xl p-6 border-white/[0.08] transition-all duration-300 hover:border-white/[0.12] flex flex-col gap-6">
+              <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-white/[0.06] pb-4 gap-2">
+                <div>
+                  <h2 class="text-sm font-mono-custom tracking-widest uppercase text-blue-400">03 / Tech Stacks & Core Competence</h2>
+                  <h3 class="font-display-custom text-xl font-bold text-white mt-1">자동화 역량 & 핵심 역량</h3>
+                </div>
+                <div class="glass-pill px-3 py-1 rounded-full text-[10px] font-mono-custom text-blue-400 self-start md:self-auto flex items-center gap-1">
+                  💡 카드를 클릭하면 내부 로직 연동 시퀀스 활성화
+                </div>
+              </div>
+
+              <!-- Skills interactive sliders inside bento -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                <!-- Skill 1: Notion -->
+                <div class="skill-card glass-card-light rounded-xl p-5 border-white/[0.04] transition-all duration-300 hover:border-blue-500/30 hover:bg-blue-500/[0.02] cursor-pointer group" data-skill="notion">
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="p-2.5 glass-pill text-blue-400 rounded-lg group-hover:bg-blue-500/10 transition-colors">
+                      <!-- Notion representation -->
+                      <span class="font-display-custom font-extrabold text-blue-400 text-[16px]">N</span>
+                    </span>
+                    <span class="text-[10px] font-mono-custom text-blue-400 font-bold bg-blue-400/10 px-2 py-0.5 rounded-full">★★★★★</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-100 group-hover:text-blue-400 transition-colors">Notion Automation</h4>
+                  <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">
+                    노션 데이터베이스 아키텍처 설계 및 수식, 관계형 롤업, API 기반 자동 동기화 고도화
+                  </p>
+                </div>
+
+                <!-- Skill 2: Zapier & Make -->
+                <div class="skill-card glass-card-light rounded-xl p-5 border-white/[0.04] transition-all duration-300 hover:border-indigo-500/30 hover:bg-indigo-500/[0.02] cursor-pointer group" data-skill="integration">
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="p-2.5 glass-pill text-indigo-400 rounded-lg group-hover:bg-indigo-500/10 transition-colors">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                    </span>
+                    <span class="text-[10px] font-mono-custom text-indigo-400 font-bold bg-indigo-400/10 px-2 py-0.5 rounded-full">★★★★★</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-100 group-hover:text-indigo-400 transition-colors">Zapier & Make Integration</h4>
+                  <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">
+                    다양한 SaaS 간 복합 분기점 워크플로우 설계, Webhook 트랜스포머, JSON API 연동
+                  </p>
+                </div>
+
+                <!-- Skill 3: Workflow Design -->
+                <div class="skill-card glass-card-light rounded-xl p-5 border-white/[0.04] transition-all duration-300 hover:border-blue-500/30 hover:bg-blue-500/[0.02] cursor-pointer group" data-skill="workflow">
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="p-2.5 glass-pill text-blue-300 rounded-lg group-hover:bg-blue-500/10 transition-colors">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 6H16"></path></svg>
+                    </span>
+                    <span class="text-[10px] font-mono-custom text-blue-300 font-bold bg-blue-500/10 px-2 py-0.5 rounded-full">★★★★☆</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-100 group-hover:text-blue-300 transition-colors">Workflow Design</h4>
+                  <p class="text-[11px] text-slate-400 mt-2 leading-relaxed">
+                    실무 비즈니스 프로세스 분석 및 불필요 동선 제로화, 데이터 파이프라인 표준 매뉴얼 구축
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- Simulated Integration Node Status display (Interactive, updates when skills clicked!) -->
+              <div class="glass-card-light rounded-xl p-5 border-white/[0.03] overflow-hidden relative">
+                <div class="absolute -right-16 -bottom-16 w-40 h-40 bg-blue-500/10 rounded-full blur-2xl"></div>
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                  <span class="text-[10px] font-mono-custom text-blue-400 font-bold uppercase tracking-wider">Active Automation Router Simulation</span>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 py-3 relative z-10" id="routerSimulation">
+                  
+                  <!-- Node 1 -->
+                  <div class="node-glow w-full md:w-[28%] glass-card p-3 rounded-xl border-blue-400/20 text-center relative font-mono-custom text-xs">
+                    <span class="absolute top-1.5 left-2 text-[8px] text-blue-400/60 font-bold">INBOUND</span>
+                    <p class="font-bold text-white mt-1.5" id="simNode1">Google Forms</p>
+                    <p class="text-[9px] text-slate-400 mt-0.5">Webhook Trigger</p>
+                  </div>
+
+                  <!-- Connector Cable 1 -->
+                  <div class="flex flex-col items-center justify-center md:flex-row h-6 md:h-1 flex-1 relative min-w-8">
+                    <div class="absolute w-0.5 md:w-full h-full md:h-0.5 bg-gradient-to-r from-blue-400 to-indigo-400/80 animate-pulse"></div>
+                    <span class="text-[8px] font-mono-custom text-indigo-400 bg-[#080b12] px-1.5 py-0.5 rounded-full border border-indigo-500/20 z-10 my-1 md:my-0">Zapier</span>
+                  </div>
+
+                  <!-- Node 2 -->
+                  <div class="node-glow w-full md:w-[28%] glass-card p-3 rounded-xl border-indigo-400/20 text-center relative font-mono-custom text-xs">
+                    <span class="absolute top-1.5 left-2 text-[8px] text-indigo-400/60 font-bold">TRANSFORM</span>
+                    <p class="font-bold text-white mt-1.5" id="simNode2">Data Format</p>
+                    <p class="text-[9px] text-slate-400 mt-0.5">Integration Parser</p>
+                  </div>
+
+                  <!-- Connector Cable 2 -->
+                  <div class="flex flex-col items-center justify-center md:flex-row h-6 md:h-1 flex-1 relative min-w-8">
+                    <div class="absolute w-0.5 md:w-full h-full md:h-0.5 bg-gradient-to-r from-indigo-400 to-blue-400/80 animate-pulse"></div>
+                    <span class="text-[8px] font-mono-custom text-blue-400 bg-[#080b12] px-1.5 py-0.5 rounded-full border border-blue-500/20 z-10 my-1 md:my-0">Make</span>
+                  </div>
+
+                  <!-- Node 3 -->
+                  <div class="node-glow w-full md:w-[28%] glass-card p-3 rounded-xl border-blue-400/20 text-center relative font-mono-custom text-xs">
+                    <span class="absolute top-1.5 left-2 text-[8px] text-blue-400/60 font-bold">DATABASE</span>
+                    <p class="font-bold text-white mt-1.5" id="simNode3">Notion CRM</p>
+                    <p class="text-[9px] text-slate-400 mt-0.5">Realtime Insert & Slack API</p>
+                  </div>
+
+                </div>
+
+                <div class="mt-4 flex justify-between items-center bg-white/[0.02] border border-white/[0.04] p-2 px-3 rounded-lg text-[10px] font-mono-custom text-slate-400">
+                  <span>SYSTEM FEEDBACK:</span>
+                  <span class="text-blue-400 animate-pulse font-semibold" id="simFeedback">✅ PIPELINE ARMED & STATUS IN NORMAL ORBIT</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Bento Box: Work Experience Timeline -->
+            <div id="experience" class="glass-card rounded-2xl p-6 border-white/[0.08] transition-all duration-300 hover:border-white/[0.12] flex flex-col gap-6">
+              <div>
+                <h2 class="text-sm font-mono-custom tracking-widest uppercase text-blue-400">04 / Path of Milestones</h2>
+                <h3 class="font-display-custom text-xl font-bold text-white mt-1">경력 사항</h3>
+              </div>
+
+              <!-- Vertical Timeline structure -->
+              <div class="relative pl-6 border-l border-white/[0.06] flex flex-col gap-8 py-3">
+                
+                <!-- Experience Item 1 -->
+                <div class="relative group">
+                  <!-- Timeline Node Anchor dot -->
+                  <span class="absolute -left-[31px] top-1 w-2.5 h-2.5 rounded-full bg-blue-500 border-[3px] border-[#080b12] ring-4 ring-blue-400/10 group-hover:scale-125 transition-transform duration-300"></span>
+                  
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                    <span class="text-xs font-mono-custom text-blue-400 font-semibold">2024/03 - Present</span>
+                    <span class="glass-pill text-[10px] text-indigo-300 font-mono-custom bg-indigo-500/10 border-indigo-500/20 px-2 py-0.5 rounded-md self-start sm:self-auto">Senior Automation Consultant</span>
+                  </div>
+                  
+                  <h4 class="text-base font-bold text-white mt-1.5">Sireal Consulting <span class="text-xs text-slate-400 font-normal">| 시리얼 컨설팅</span></h4>
+                  
+                  <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                    다양한 스타트업과 중소기업을 대상으로 <span class="text-slate-200">노션 기반 업무 시스템 및 자동화 구축 프로젝트</span>를 전격 진행했습니다. Zapier, Make, Slack, Google Workspace를 입체적으로 연동하여 반복 업무의 비정형 흐름을 통제했으며, <span class="text-blue-400 font-bold bg-blue-400/5 px-1 py-0.5 rounded">고객사의 평균 업무 처리 시간을 35% 이상 단축</span>하고 표준 PM 관리 인프라를 확립하여 기업 내부 운영 리소스를 조기 절감했습니다.
+                  </p>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative group">
+                  <!-- Timeline Node Anchor dot -->
+                  <span class="absolute -left-[31px] top-1 w-2.5 h-2.5 rounded-full bg-indigo-500 border-[3px] border-[#080b12] ring-4 ring-indigo-400/10 group-hover:scale-125 transition-transform duration-300"></span>
+                  
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                    <span class="text-xs font-mono-custom text-indigo-400 font-semibold">2022/01 - 2024/02</span>
+                    <span class="glass-pill text-[10px] text-[indigo-300] font-mono-custom bg-indigo-500/10 border-indigo-500/20 px-2 py-0.5 rounded-md self-start sm:self-auto">No-Code Automation Specialist</span>
+                  </div>
+                  
+                  <h4 class="text-base font-bold text-white mt-1.5">FlowSync Studio <span class="text-xs text-slate-400 font-normal">| 플로우싱크 스튜디오</span></h4>
+                  
+                  <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                    기업의 마케팅 프로세스 및 영업 데이터 통합 CRM 구축을 도맡아 수행했습니다. 실무진의 피드백 노이즈를 제로로 줄이는 최적의 워크플로우를 기획했으며, 기존 작업 속도 대비 <span class="text-indigo-400 font-bold font-semibold">구축 사이클을 고효율화</span>하는 템플릿 자산화 체계를 이끌어 내부 프로젝트 리드타임을 전면 단축했습니다.
+                  </p>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="relative group">
+                  <!-- Timeline Node Anchor dot -->
+                  <span class="absolute -left-[31px] top-1 w-2.5 h-2.5 rounded-full bg-blue-400 border-[3px] border-[#080b12] ring-4 ring-blue-400/10 group-hover:scale-125 transition-transform duration-300"></span>
+                  
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                    <span class="text-xs font-mono-custom text-blue-300 font-semibold">2020/06 - 2021/12</span>
+                    <span class="glass-pill text-[10px] text-[indigo-300] font-mono-custom bg-indigo-500/10 border-indigo-500/20 px-2 py-0.5 rounded-md self-start sm:self-auto">Junior Workflow Consultant</span>
+                  </div>
+                  
+                  <h4 class="text-base font-bold text-white mt-1.5">Digital Process Lab <span class="text-xs text-slate-400 font-normal">| 디지털 프로세스 랩</span></h4>
+                  
+                  <p class="text-xs text-slate-400 mt-2 leading-relaxed font-light">
+                    수작업 방식에 국한된 레거시 데이터 입출력과 종이 중심 보고 체계를 실시간 통합 관리 환경으로 전환하는 업무를 수행했습니다. 임직원의 디지털 전환 교육 세션을 총괄하며 <span class="text-blue-400 font-bold font-semibold">운영 프로세스 가이드</span>와 매뉴얼을 전담하여 기업의 전환 저항을 원활하게 조율했습니다.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Bento Box: Dual Symmetric Education details -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <!-- Education card 1 (Korea Uni MBA) -->
+              <div class="glass-card rounded-2xl p-6 border-white/[0.08] transition-all duration-300 hover:border-white/[0.12] flex flex-col gap-3 font-sans-custom">
+                <div class="flex justify-between items-start">
+                  <span class="p-2 glass-pill text-blue-400 rounded-lg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                  </span>
+                  <span class="text-[10px] font-mono-custom text-slate-500">2023/03 - 2025/02</span>
+                </div>
+                
+                <h4 class="text-xs font-mono-custom text-blue-400 font-bold uppercase tracking-wider">Master Degree</h4>
+                <h3 class="text-base font-bold text-white">Korea University <span class="text-xs text-slate-400 font-normal">| 고려대학교</span></h3>
+                <p class="text-xs text-slate-400 mt-1 font-light">
+                  경영전략학 석사 (MBA)<br/>
+                  세부 전공: <span class="text-slate-300">디지털 트랜스포메이션 전략 (Digital Transformation Strategy)</span>
+                </p>
+              </div>
+
+              <!-- Education card 2 (Hanyang BBA) -->
+              <div class="glass-card rounded-2xl p-6 border-white/[0.08] transition-all duration-300 hover:border-white/[0.12] flex flex-col gap-3 font-sans-custom">
+                <div class="flex justify-between items-start">
+                  <span class="p-2 glass-pill text-indigo-400 rounded-lg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path></svg>
+                  </span>
+                  <span class="text-[10px] font-mono-custom text-slate-500">2016/03 - 2020/02</span>
+                </div>
+
+                <h4 class="text-xs font-mono-custom text-indigo-400 font-bold uppercase tracking-wider">Bachelor Degree</h4>
+                <h3 class="text-base font-bold text-white">Hanyang University <span class="text-xs text-slate-400 font-normal">| 한양대학교</span></h3>
+                <p class="text-xs text-slate-400 mt-1 font-light">
+                  경영학사 (BBA)<br/>
+                  세부 전공: <span class="text-slate-300 font-normal">경영정보시스템 (Business Information Systems)</span>
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Bento Box: INTERACTIVE AUTOMATION ROI CALCULATOR (Outstanding Visual Value-Add) -->
+            <div id="calculator" class="glass-card rounded-2xl p-6 border-white/[0.08] transition-all duration-300 hover:border-white/[0.12] flex flex-col gap-6 relative overflow-hidden">
+              <!-- Radial gradient spotlight inside calculator -->
+              <div class="absolute -left-20 -bottom-20 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl"></div>
+              
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="glass-pill px-2.5 py-0.5 rounded text-[10px] font-mono-custom text-blue-400 bg-blue-400/10 font-bold">AUTOMATION CALCULATOR</span>
+                  <span class="w-1.5 h-1.5 bg-blue-500 rounded-full animate-ping"></span>
+                </div>
+                <h3 class="font-display-custom text-xl font-bold text-white mt-2">업무 자동화 예상 ROI 계산기</h3>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed font-light">
+                  팀 규모와 수작업 빈도를 설정하시면 노코드 자동화 적용 시 비약되는 월간 리소스 보전 수치와 비용 절감 효과를 산정해 드립니다.
+                </p>
+              </div>
+
+              <!-- Layout of inputs & outputs -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 relative z-10 font-sans-custom">
+                
+                <!-- Left half (Sliders) -->
+                <div class="space-y-5">
+                  <!-- TEAM SIZE SLIDER -->
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-xs font-semibold">
+                      <label for="sliderTeam" class="text-slate-300">대상 팀 규모 (인원수)</label>
+                      <span class="text-blue-400 font-mono-custom font-bold text-sm" id="valTeam">5 명</span>
+                    </div>
+                    <input type="range" id="sliderTeam" min="1" max="50" value="5" class="w-full h-1 bg-white/[0.08] rounded-lg appearance-none cursor-pointer accent-blue-500" />
+                  </div>
+
+                  <!-- REPETITIVE HOURS SLIDER -->
+                  <div class="space-y-2">
+                    <div class="flex justify-between items-center text-xs font-semibold">
+                      <label for="sliderHours" class="text-slate-300">인당 주간 반복 업무 시간 (단위: h)</label>
+                      <span class="text-indigo-400 font-mono-custom font-bold text-sm" id="valHours">8 시간</span>
+                    </div>
+                    <input type="range" id="sliderHours" min="1" max="40" value="8" class="w-full h-1 bg-white/[0.08] rounded-lg appearance-none cursor-pointer accent-indigo-500" />
+                  </div>
+
+                  <p class="text-[10px] text-slate-500 italic font-light">
+                    * 인당 업무 효율 보존도 75%, 평균 기업 노무 대치 비용 시간당 35,000₩ 기준 산술식
+                  </p>
+                </div>
+
+                <!-- Right half (Displays with Glass Glowing) -->
+                <div class="glass-card-light rounded-xl p-5 border-white/[0.04] flex flex-col justify-between gap-4 relative overflow-hidden font-mono-custom">
+                  
+                  <div class="space-y-4">
+                    <div>
+                      <span class="text-[10px] text-slate-500 block">EXPECTED RESOURCE SAVING</span>
+                      <span class="text-2xl sm:text-3xl font-display-custom font-black text-blue-400 tracking-tight" id="savingHours">
+                        129.0 <span class="text-xs font-normal text-slate-400 font-sans-custom">Hours / Month</span>
+                      </span>
+                    </div>
+
+                    <div>
+                      <span class="text-[10px] text-slate-500 block">ESTIMATED COST SAVINGS</span>
+                      <span class="text-2xl sm:text-3xl font-display-custom font-black text-indigo-400 tracking-tight" id="savingMoney">
+                        4,515,000 <span class="text-xs font-normal text-slate-400 font-sans-custom">₩ / Month</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="border-t border-white/[0.05] pt-3 text-[10px] text-slate-400 leading-relaxed font-sans-custom font-light">
+                    ⚙️ 전시진의 노코드 시스템 구축 시 보장되는 예상 월간 최소 자원 회수 가치입니다.
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Bento Box: CONTACT CONSULTATION FORM (Simulated client engagement) -->
+            <div id="contact" class="glass-card rounded-2xl p-6 border-white/[0.08] transition-all duration-300 hover:border-white/[0.12] flex flex-col gap-6 relative">
+              <div>
+                <h2 class="text-sm font-mono-custom tracking-widest uppercase text-blue-400">05 / Project Consultation</h2>
+                <h3 class="font-display-custom text-xl font-bold text-white mt-1">프로젝트 자동화 의뢰 가동</h3>
+                <p class="text-xs text-slate-300 mt-1 leading-relaxed font-light">
+                  구축하고자 하는 사내 자동화 방향성을 기입해 보세요. 접수 시뮬레이터를 가동하여 전시진의 파이프라인 작동을 데모로 보여 드립니다!
+                </p>
+              </div>
+
+              <!-- Consult Form -->
+              <form id="consultForm" class="space-y-4 flex flex-col relative z-20 font-sans-custom">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Name -->
+                  <div class="space-y-1.5 font-sans-custom">
+                    <label for="formName" class="text-xs text-slate-400 font-medium font-sans-custom">성함 / 담당자명</label>
+                    <input type="text" id="formName" name="name" required placeholder="예: 홍길동" class="glass-card-light rounded-xl p-3 text-xs text-slate-200 border-white/[0.04] focus:outline-none focus:border-blue-400/50 focus:bg-blue-500/[0.01] transition-all w-full font-sans-custom h-10" />
+                  </div>
+                  <!-- Company -->
+                  <div class="space-y-1.5 font-sans-custom">
+                    <label for="formCompany" class="text-xs text-slate-400 font-medium font-sans-custom">회사명 / 소속</label>
+                    <input type="text" id="formCompany" name="company" placeholder="예: 주식회사 에ー아이" class="glass-card-light rounded-xl p-3 text-xs text-slate-200 border-white/[0.04] focus:outline-none focus:border-blue-400/50 focus:bg-blue-500/[0.01] transition-all w-full font-sans-custom h-10" />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Type of Project -->
+                  <div class="space-y-1.5 font-sans-custom">
+                    <label for="formType" class="text-xs text-slate-400 font-medium font-sans-custom">협업 분야 선호도</label>
+                    <select id="formType" name="type" class="glass-card-light rounded-xl p-3 text-xs text-slate-200 border border-white/[0.04] focus:outline-none focus:border-blue-400/50 focus:bg-blue-500/[0.01] transition-all w-full select-dark font-sans-custom h-10">
+                      <option value="notion" class="bg-[#0e1628] text-slate-300">노션 기반 사내 올인원 시스템 구축</option>
+                      <option value="zapier" class="bg-[#0e1628] text-slate-300">SaaS 간 복합 동기화 자동화 (Zapier, Make)</option>
+                      <option value="consulting" class="bg-[#0e1628] text-slate-300">비즈니스 프로세스 설계 및 디지털 교육</option>
+                      <option value="all" class="bg-[#0e1628] text-slate-300">기타 자동화 전반 종합 컨설팅</option>
+                    </select>
+                  </div>
+                  <!-- Email contact -->
+                  <div class="space-y-1.5 font-sans-custom">
+                    <label for="formEmail" class="text-xs text-slate-400 font-medium font-sans-custom">회신 받으실 이메일</label>
+                    <input type="email" id="formEmail" name="email" required placeholder="example@company.com" class="glass-card-light rounded-xl p-3 text-xs text-slate-200 border-white/[0.04] focus:outline-none focus:border-blue-400/50 focus:bg-blue-500/[0.01] transition-all w-full font-sans-custom h-10" />
+                  </div>
+                </div>
+
+                <!-- Message body -->
+                <div class="space-y-1.5 font-sans-custom">
+                  <label for="formMessage" class="text-xs text-slate-400 font-medium font-sans-custom">현재 안고 계신 자동화 페인포인트 혹은 요구사항</label>
+                  <textarea id="formMessage" rows="3" required placeholder="수동 데이터 업로드 업무가 너무 많습니다. / 메신저와 노션 데이터베이스를 연동하고 싶습니다." class="glass-card-light rounded-xl p-3 text-xs text-slate-200 border-white/[0.04] focus:outline-none focus:border-blue-400/50 focus:bg-blue-500/[0.01] transition-all w-full resize-none font-sans-custom"></textarea>
+                </div>
+
+                <!-- Submitting -->
+                <button type="submit" id="btnSubmit" class="glass-pill text-xs font-bold tracking-widest text-white uppercase bg-blue-600 p-4 rounded-xl hover:bg-blue-500 active:scale-[0.98] transition-all duration-300 font-display-custom border-none flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-blue-500/10">
+                  <span>DEPLOY NEW AUTOMATION Pipeline</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+              </form>
+
+              <!-- Simulated overlay/loader that triggers dynamically inside pure JS! -->
+              <div id="formOverlay" class="absolute inset-0 bg-[#060b18]/90 backdrop-blur-md rounded-2xl z-30 flex flex-col items-center justify-center p-6 text-center opacity-0 pointer-events-none transition-all duration-500 font-sans-custom">
+                <div class="glass-pill p-4 text-blue-400 rounded-full mb-4 animate-bounce" id="overlayIcon">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <!-- Interactive status output logs -->
+                <h4 class="font-display-custom text-xl font-bold text-white mb-2" id="overlayHeader">자동화 시퀀스 컴파일 중...</h4>
+                <div class="glass-card-light rounded-xl p-3 w-full max-w-sm border-white/[0.04] font-mono-custom">
+                  <p class="text-[10px] text-slate-400 text-left line-clamp-4 leading-relaxed" id="overlayLogs">
+                    [SYSTEM] Instantiating form listener router...<br/>
+                    [SYSTEM] Packaging data fields into mock webhook payload...<br/>
+                    [SYSTEM] Arming Notion connection node...<br/>
+                  </p>
+                </div>
+                <button id="btnDismissOverlay" class="mt-4 glass-pill text-[10px] font-mono-custom px-4 py-1.5 rounded-full text-blue-400 hover:bg-blue-400/10 transition-colors uppercase outline-none hidden">
+                  완료 및 닫기
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+      <!-- METICULOUS MINIMAL FOOTER -->
+      <footer class="py-12 mt-16 border-t border-white/[0.04] relative z-10 mx-auto w-[92%] max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-6 text-slate-500 text-xs font-sans-custom">
+        <div class="flex items-center gap-2 select-none">
+          <span class="w-2 h-2 rounded-full bg-slate-600"></span>
+          <span class="font-mono-custom tracking-[0.15em] text-[10px] uppercase">© 2026 JEON SI-JIN AUTOMATION.</span>
+        </div>
+        
+        <div class="flex items-center gap-6 font-mono-custom text-[10px] tracking-wider text-slate-400">
+          <span class="hover:text-blue-400 transition-colors cursor-pointer select-none">PERSISTED ON CLOUD RUN</span>
+          <span class="text-slate-700 select-none">|</span>
+          <a href="http://www.sijinautomation.com" target="_blank" class="hover:text-blue-400 transition-colors">OFFICIAL PAGE</a>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- SCRIPT ENTRYPOINT -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

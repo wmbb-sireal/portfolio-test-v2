@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(24px) saturate(140%);
+    -webkit-backdrop-filter: blur(24px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-card-light {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(16px) saturate(130%);
+    -webkit-backdrop-filter: blur(16px) saturate(130%);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .glass-pill {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .glow-blue {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.25);
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
+  }
+
+  /* Core animations to add physical movement under the glass panels */
+  @keyframes float-1 {
+    0%, 100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    50% {
+      transform: translate(30px, -40px) scale(1.1);
+    }
+  }
+
+  @keyframes float-2 {
+    0%, 100% {
+      transform: translate(0px, 0px) scale(1.15);
+    }
+    50% {
+      transform: translate(-40px, 30px) scale(0.95);
+    }
+  }
+
+  .animate-float-1 {
+    animation: float-1 25s infinite ease-in-out;
+  }
+
+  .animate-float-2 {
+    animation: float-2 28s infinite ease-in-out;
+  }
+
+  .sheen-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sheen-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.01) 30%,
+      rgba(255, 255, 255, 0.08) 50%,
+      rgba(255, 255, 255, 0.01) 70%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+  }
+
+  .sheen-effect:hover::after {
+    transform: translateX(50%);
+    transition: transform 1.2s cubic-bezier(0.1, 0.8, 0.3, 1);
+  }
+
+  /* Section Title with horizontal decorative rule from theme */
+  .artistic-section-title {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #3b82f6;
+    display: flex;
+    align-items: center;
+  }
+
+  .artistic-section-title::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: rgba(59, 130, 246, 0.2);
+    margin-left: 15px;
+  }
+}
+
+/* Custom Scrollbar for Sleek Visual Identity */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(8, 11, 18, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  border: 2px solid rgba(8, 11, 18, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base custom font mappings */
+.font-sans-custom {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.font-display-custom {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono-custom {
+  font-family: 'JetBrains Mono', monospace;
+}
+
